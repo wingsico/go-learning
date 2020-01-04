@@ -1,4 +1,4 @@
-package main
+package hello
 
 import "fmt"
 
@@ -19,11 +19,11 @@ func Hello(name string, language string) string {
 		name = defaultHelloName
 	}
 
-	return greetingPrefix(language) + name
+	return GreetingPrefix(language) + name
 }
 
-func greetingPrefix(language string) (prefix string) {
-
+// GreetingPrefix : get Greeting prefix by language
+func GreetingPrefix(language string) (prefix string) {
 	switch language {
 	case french:
 		prefix = frenchHelloPrefix
