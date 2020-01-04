@@ -1,10 +1,10 @@
 package loop
 
-// Repeat : get s copy five times;
-func Repeat(s string) string {
+// Repeat : got a string repeat by $count times;
+func Repeat(s string, count int) string {
 	var repeat string
-	for i := 0; i < 5; i++ {
-		repeat = repeat + s
+	for i := 0; i < count; i++ {
+		repeat += s
 	}
 	return repeat
 }
