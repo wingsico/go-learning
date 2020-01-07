@@ -7,5 +7,22 @@ func Sum(a []int) (sum int) {
 	for _, n := range a {
 		sum += n
 	}
-	return sum
+	return
+}
+
+// SumAll get a sum slice of some slices
+func SumAll(numbersToSum ...[]int) (sums []int) {
+	for _, numbers := range numbersToSum {
+		sums = append(sums, Sum(numbers))
+	}
+	return
+}
+
+// SumTail 个get a tail sum slice of some slices
+func SumTail(numbersToSum ...[]int) (sums []int) {
+	for _, numbers := range numbersToSum {
+		tail := numbers[1:]
+		sums = append(sums, Sum(tail))
+	}
+	return
 }
