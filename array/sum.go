@@ -18,7 +18,7 @@ func SumAll(numbersToSum ...[]int) (sums []int) {
 	return
 }
 
-// SumTail 个get a tail sum slice of some slices
+// SumTail get a tail sum slice of some slices
 func SumTail(numbersToSum ...[]int) (sums []int) {
 	for _, numbers := range numbersToSum {
 		if len(numbers) == 0 {
