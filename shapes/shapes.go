@@ -37,3 +37,14 @@ func Perimeter(rect Rectangle) float64 {
 func Area(rect Rectangle) float64 {
 	return rect.Width * rect.Height
 }
+
+// Triangle : 三角形，拥有底和高
+type Triangle struct {
+	B float64
+	H float64
+}
+
+// Area ： 计算三角形面积
+func (t Triangle) Area() float64 {
+	return t.B * t.H / 2
+}
